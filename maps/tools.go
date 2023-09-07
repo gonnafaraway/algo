@@ -1,6 +1,6 @@
-package _map
+package maps
 
-// FindLargestValue helps to find the largest value in a map.
+// FindLargestValue helps to find the largest value in a maps.
 func FindLargestValue[T comparable](m map[T]int) int {
 	var largestValue int
 
