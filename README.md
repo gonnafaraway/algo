@@ -9,11 +9,13 @@ Try it now!
 package main
 
 import (
-	"github.com/gonnafaraway/codes/linux"
-	"os"
+	"github.com/gonnafaraway/algo/maps"
 )
 
 func main() {
-	os.Exit(linux.WithError)
+	a := make(map[string]int)
+	a["1"] = 1
+	a["2"] = 4
+	fmt.Println(maps.FindLargestValue(a)) // 4
 }
 ```
