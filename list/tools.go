@@ -1,5 +1,7 @@
 package list
 
+import "fmt"
+
 type Node struct {
 	Value int
 	Next  *Node
@@ -20,4 +22,12 @@ func FindLargestNode(head *Node) *Node {
 	}
 
 	return largest
+}
+
+// PrintLinkedList helps to print all values of linked list in console.
+func PrintLinkedList(list *Node) {
+	for list.Next != nil {
+		fmt.Println(list.Value)
+		list = list.Next
+	}
 }
