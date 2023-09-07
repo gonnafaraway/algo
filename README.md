@@ -4,6 +4,10 @@
 Library with various arithmetic functions for structured data.
 Try it now!
 
+## Blocks
+* maps
+* list (funcs for working with linked lists)
+
 ## Usage
 ```go
 package main
