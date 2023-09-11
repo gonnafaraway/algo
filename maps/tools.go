@@ -1,5 +1,7 @@
 package maps
 
+import "fmt"
+
 // FindLargestValue helps to find the largest value in a maps.
 func FindLargestValue[T comparable](m map[T]int) int {
 	var largestValue int
@@ -11,4 +13,11 @@ func FindLargestValue[T comparable](m map[T]int) int {
 	}
 
 	return largestValue
+}
+
+// Print prints to console any type of map.
+func Print[T comparable](m map[T]T) {
+	for k, v := range m {
+		fmt.Printf("%#v: %#v\n", k, v)
+	}
 }
